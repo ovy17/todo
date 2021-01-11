@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Todo app</title>
+
+
+</head>
+
+<body class="light-theme">
+  <div class="header-image"></div>
+  <div class="main">
+    <div class="container">
+      <div class="title">
+        <h1>TODO</h1>
+        <img src="images/icon-sun.svg" alt="sun-icon" class="change-theme">
+      </div>
+      <div class="app">
+        <div class="add-item">
+          <button class="circle checked"></button>
+          <input type="text" placeholder="Create a new todo...">
+        </div>
+        <div class="items">
+          <div class="item active" draggable="true">
+            <button class="circle"></button>
+            <p>Complete online JavaScript course</p>
+            <button class="delete"></button>
+          </div>
+          <div class="item" draggable="true">
+            <button class="circle"></button>
+            <p>Jog around the park 3x</p>
+            <button class="delete"></button>
+          </div>
+          <div class="item" draggable="true">
+            <button class="circle"></button>
+            <p>10 minutes meditation</p>
+            <button class="delete"></button>
+          </div>
+          <div class="item" draggable="true">
+            <button class="circle"></button>
+            <p>Read for 1 hour</p>
+            <button class="delete"></button>
+          </div>
+          <div class="item" draggable="true">
+            <button class="circle"></button>
+            <p>Pick up groceries</p>
+            <button class="delete"></button>
+          </div>
+          <div class="item" draggable="true">
+            <button class="circle"></button>
+            <p>Complete Todo App on Frontend Mentor</p>
+            <button class="delete"></button>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <p>
+          <span class="number">5</span>
+          items left
+        </p>
+        <p>
+          <span class="items-all">All</span>
+          <span class="items-active">Active</span>
+          <span class="items-completed">Completed</span>
+        </p>
+        <p>
+          <span class="clear-completed">Clear Completed</span>
+        </p>
+      </div>
+      <p class="information">
+        Drag and drop to reorder list
+      </p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
